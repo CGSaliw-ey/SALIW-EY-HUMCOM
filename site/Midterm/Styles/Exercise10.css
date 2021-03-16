@@ -1,0 +1,83 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    box-sizing: border-box;
+    margin: 10px auto;
+}
+p{
+    font-size: 25px;
+    color: darkred;
+}
+body{
+    background-color: antiquewhite;
+    display:block;
+    position: relative;
+}
+#mainContent{
+    width: 1024px;
+    border: 1pt #BA4A00 solid;
+}
+header{
+    width: 960px;
+    height: 250px;
+    border: 1pt #2E4053 solid;
+}
+ul, li{
+    align-items: right;
+    display: inline-block;
+    padding: 0px;
+    list-style: none;
+}
+.navis, .navis:active{
+    text-decoration: none;
+    color: #424949;
+    display: block;
+    width: 150px;
+    background-color:grey;
+    text-align: center;
+    padding: 3px;
+    border-radius: 8px;
+}
+article{
+    min-height: 460px;
+}
+#sectionContent{
+    float: center;
+    height: max-content;
+    width:max-content;
+}
+.one{
+    background-image: url('https://www.pluggedin.com/wp-content/uploads/2021/03/Raya-and-the-Last-Dragon-WP-1024x587.jpg');
+    width: 960px;
+    height: 500px;
+    border: 1pt #2E4053 solid;
+}
+.two{
+    background-image: url('https://as1.ftcdn.net/jpg/01/70/27/56/500_F_170275645_mva8f8sjGYakdJgKXsGy6F8KCX7l8RPk.jpg');
+    width: 960px;
+    height: 500px;
+    border: 1pt #2E4053 solid;
+}
+.three{
+    background-image: url('https://www.kindpng.com/picc/m/172-1728833_volleyball-black-and-white-clipart-transparent-cartoons-volleyball.png');
+    width: 960px;
+    height: 500px;
+    border: 1pt #2E4053 solid;
+}
+.refere{
+    width: 960px;
+    height: 500px;
+    border: 1pt #2E4053 solid;
+}
+#headingContent{
+    float: center;
+    height: max-content;
+    width:max-content;
+}
+.logo{
+    float: left;
+    background-image: url('https://lh3.googleusercontent.com/a-/AOh14Gg-M8QXzyWbqwi2tzxbhHGEKlVmxGNn3YMjVXvV=s96-c-rg-br100');
+    width: 100px;
+    height: 100px;
+    border: 1pt #2E4053 solid;
+}
