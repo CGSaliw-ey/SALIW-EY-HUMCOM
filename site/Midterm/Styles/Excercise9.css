@@ -4,6 +4,9 @@
     box-sizing: border-box;
     margin: 10px auto;
 }
+.image{
+    float: right;
+}
 .all-browsers {
 margin: 0;
 padding: 5px;
