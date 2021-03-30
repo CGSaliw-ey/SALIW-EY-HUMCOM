@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif';
+}
+body{width: 100%; }
+
+#wrapper, header, footer{
+    width: 95%; margin: 10px auto;
+}
+header,footer{
+    height: 200px;
+    background-color: cadetblue;
+    width: 100%;
+    padding: 15px;
+}
+#mainContent{
+    width: 1024px;
+    height:1024px;
+    border: 5pt darkslategrey solid;
+    background-color: black;
+}
+
+
+.menu a {
+    background-color:#e5e5e5;
+    padding:8px;
+    margin-top:7px;
+    display:block;
+    width:100%;
+    color:black;
+}
+.main {
+    float:left;
+    width:60%;
+    padding:0 20px;
+}
+.right {
+    background-color:#e5e5e5;
+    float:left;
+    width:20%;
+    padding:15px;
+    margin-top:7px;
+    text-align:center;
+}
+.header{
+    background-color: aquamarine;
+    padding: 15px;
+    text-align: left;
+}
+.brand{
+    background-color: aquamarine;
+    border: azure 3pt solid;
+    padding: 15px;
+    width: 10%;
+}
+.globalNav{
+    background-color: aquamarine;
+    border: azure 3pt solid;
+    padding: 15px;
+    width: 55%;
+}
+.tools{
+    background-color: aquamarine;
+    border: azure 3pt solid;
+    padding: 15px;
+    width: 20%;
+}
+.hero{
+    background-color: aquamarine;
+    
+}
+.ad{
+    background-color:#e5e5e5;
+    float:left;
+    width:20%;
+    padding:15px;
+    margin-top:7px;
+    text-align:center;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    /* For smaller laptop: */
+    .menu, .main, .ad {
+      width:100%;
+    }
+}
+@media screen and (max-width: 768px) {
+    /* For tablet device: */
+    .menu, .main, .ad {
+      width:100%;
+    }
+}
+@media screen and (max-width: 600px) {
+    /* For small mobile screen: */
+    .menu, .main, .ad {
+      width:100%;
+    }
+}
