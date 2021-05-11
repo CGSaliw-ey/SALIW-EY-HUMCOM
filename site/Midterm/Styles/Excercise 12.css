@@ -1,100 +1,75 @@
 *{
-    box-sizing: border-box; color: #ffff;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
 }
-body{ width: 100%; }
-
-#wrapper, header, footer{
-    width: 95%; margin: 10px auto;
-}
-header, footer{
-    height: 200px;
-    background-color: #9933cc;
+body{
+    background-color: dimgray;
     width: 100%;
-    padding: 15px;
 }
-.one{
-    height: 150px;
-    background-color: whitesmoke;
-    width: 10%;
-    padding: 15px;
-    position: absolute;
-    left: 5%;
+[class*="col-"]{
+    float: left;
+    padding: 5px;
+    border: 5px solid rgba(10, 10, 10, 0.5);
+    background-color: lightskyblue;
 }
-.two{
-    height: 150px;
-    background-color: blue;
-    width: 55%;
-    padding: 15px;
-    position: absolute;
-    left: 18%;
+#wrapper{
+    width: 90%;
 }
-.three{
-    height: 150px;
-    background-color: pink;
-    width: 20%;
-    padding: 15px;
-    position: absolute;
-    left: 75.5%;
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
-
-
-
-.grid-container{
+.col-12{
     width: 100%;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-gap: 10px;
 }
-.grid-container>.col-1{
-    height: 500px;
-    background-color: darksalmon;
+.col-9{
+    width: 75%;
 }
-footer{ height: 100px; }
+.col-7{
+    width: 58.333%;
+}
+.col-6{
+    width: 50%;
+}
+.col-3{
+    width: 25%;
+}
+.col-2{
+    width: 16.667%;
+}
+.header,.hero,.body,.sidebar,.footer{
+    background-color: deepskyblue;
+} 
+@media screen and (max-width:1024px){
 
-@media screen and (max-width: 1024px) {
-    .grid-container{
+
+}
+@media screen and (max-width:768px){
+    #wrapper{
+        width: 100%;    
+    }
+    .col-sm-6{
+        width:50%;
+    }
+    .body,.sidebar{
         width: 100%;
-        display: grid;
-        grid-auto-flow: row;
-        grid-template-columns: auto auto auto auto;
-    }
-    .grid-container>.col1, .grid-container>.col2, .grid-container>.col3{
-        height: 500px;
-        background-color: darksalmon;
-    }
-    .grid-container>.col4{
-        height: 200px;
-        grid-column-end: span 3;
     }
 }
-@media screen and (max-width: 768px) {
-    .grid-container{
+@media screen and (max-width:600px){
+    #wrapper{
+        width: 100%;    
+    }
+    .col-sm-7{
+        width:100%;
+    }
+    .brand,.GlobalNav,.tools,.hf,.hcta,.ad,.body,.af,.al,.sidebar,.sf{
         width: 100%;
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        grid-gap: 10px;
     }
-    .grid-container>.col1, .grid-container>.col2{
-        height: 300px;
-        grid-column-end: span 2;
-        background-color: darksalmon;
-    }
-    .grid-container>.col3, .grid-container>.col4{
-        height: 200px;
-        grid-column-end: span 4;
-    }
-}
-@media screen and (max-width: 600px) {
-    .grid-container{
-        width: 100%;
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        grid-gap: 10px;
-    }
-    .grid-container>.col1, .grid-container>.col2{
-        height: 200px;
-        grid-column-end: span 4;
-        background-color: darksalmon;
-    }
+
 }
